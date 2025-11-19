@@ -1,7 +1,7 @@
 // js/templates.js
 
 export function getLoginScreenHTML() {
-    return `<div class="flex items-center justify-center min-h-screen bg-gray-100"><div class="w-full max-w-md p-8 space-y-6 bg-white rounded-xl shadow-lg login-card"><div class="text-center"><h1 class="text-3xl font-bold text-gray-800">Login Logistik</h1><p class="text-gray-500">Sistem Logistik Mapalast</p></div><div class="text-sm text-center mt-2"><a href="public-kegiatan.html" class="text-blue-600 hover:underline">Anggota? Catat Penggunaan Kegiatan di sini</a></div><form id="login-form" class="space-y-4" novalidate><div><label for="email" class="text-sm font-medium text-gray-700">Email</label><input id="email" name="email" type="email" autocomplete="email" required class="w-full p-3 mt-1 border rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="admin@mapala.com"></div><div><label for="password" class="text-sm font-medium text-gray-700">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required class="w-full p-3 mt-1 border rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="••••••••"></div><div id="login-error" class="text-red-500 text-sm text-center min-h-[1.25rem]"></div><div><button type="submit" class="w-full px-4 py-3 font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none">Masuk</button></div></form></div></div>`;
+    return `<div class="flex items-center justify-center min-h-screen bg-gray-100"><div class="w-full max-w-md p-8 space-y-6 bg-white rounded-xl shadow-lg login-card"><div class="text-center"><h1 class="text-3xl font-bold text-gray-800">Login Logistik</h1><p class="text-gray-500">Sistem Logistik MPA HIMALAYA</p></div><div class="text-sm text-center mt-2"><a href="public-kegiatan.html" class="text-blue-600 hover:underline">Anggota? Catat Penggunaan Kegiatan di sini</a></div><form id="login-form" class="space-y-4" novalidate><div><label for="email" class="text-sm font-medium text-gray-700">Email</label><input id="email" name="email" type="email" autocomplete="email" required class="w-full p-3 mt-1 border rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="admin@mapala.com"></div><div><label for="password" class="text-sm font-medium text-gray-700">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required class="w-full p-3 mt-1 border rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="••••••••"></div><div id="login-error" class="text-red-500 text-sm text-center min-h-[1.25rem]"></div><div><button type="submit" class="w-full px-4 py-3 font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none">Masuk</button></div></form></div></div>`;
 }
 
 export function getDashboardHTML(user, firestoreUser) {
@@ -9,8 +9,8 @@ export function getDashboardHTML(user, firestoreUser) {
     const logoUrl = '';
     return `<header class="bg-white shadow-sm sticky top-0 z-20"><div class="container mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center py-4">
         <div class="flex items-center space-x-3">
-            ${logoUrl ? `<img src="${logoUrl}" alt="Logo MAPALAST" class="h-10 w-10 object-contain">` : ''}
-            <h1 class="text-xl font-bold text-gray-800">MAPALAST</h1>
+            ${logoUrl ? `<img src="${logoUrl}" alt="Logo MPA HIMALAYA" class="h-10 w-10 object-contain">` : ''}
+            <h1 class="text-xl font-bold text-gray-800">MPA HIMALAYA</h1>
         </div>
         <div class="flex items-center space-x-4">
             <span class="text-sm font-bold text-gray-700 hidden sm:block">${displayName}</span>
