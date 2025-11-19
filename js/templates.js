@@ -182,6 +182,7 @@ export function getModalContainerHTML() {
                     <input type="text" id="alat-merk" placeholder="Merk" class="w-full p-3 border rounded-lg" required>
                     <input type="number" id="alat-tahun" placeholder="Tahun Pembelian" class="w-full p-3 border rounded-lg" required min="1980" max="2099">
                     <input type="text" id="alat-warna" placeholder="Warna" class="w-full p-3 border rounded-lg" required>
+                    <input type="text" id="alat-nomor-seri" placeholder="Nomor Seri (opsional)" class="w-full p-3 border rounded-lg" autocomplete="off">
                 </div>
 
                 <div class="mt-6 border-t pt-4">

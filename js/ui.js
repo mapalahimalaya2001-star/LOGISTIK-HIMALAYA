@@ -870,6 +870,7 @@ export function openAddAlatModal() {
     form.querySelector('#alat-nama').readOnly = false;
     form.querySelector('#alat-kategori').disabled = false;
     form.querySelector('#alat-tahun').readOnly = false;
+    form.querySelector('#alat-nomor-seri').value = '';
     document.getElementById('cumulative-fields').classList.remove('hidden');
     document.getElementById('individual-fields').classList.add('hidden');
     const checkbox = document.getElementById('alat-is-individual');
@@ -892,6 +893,7 @@ export function openEditAlatModal(alatId) {
     form.querySelector('#alat-merk').value = alat.merk || '';
     form.querySelector('#alat-warna').value = alat.warna || '';
     form.querySelector('#alat-tahun').value = alat.tahunPembelian || '';
+    form.querySelector('#alat-nomor-seri').value = alat.nomorSeri || '';
     form.querySelector('#alat-kondisi').value = alat.kondisi || 'Baik';
     form.querySelector('#alat-keterangan').value = alat.keterangan || '';
     form.querySelector('#alat-nama').readOnly = true;
