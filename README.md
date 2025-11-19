@@ -1,7 +1,7 @@
 <div align="center">
   
 # =============================================
-# 🔴 SISTEM LOGISTIK MAPALAST 🔴
+# 🔴 SISTEM LOGISTIK MPA HIMALAYA 🔴
 # =============================================
   
 ### APLIKASI WEB INVENTARIS HIBRIDA (UNIT & STOK)
