@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Catat Penggunaan Kegiatan - MAPALAST</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-3xl mx-auto p-6">
+    <h1 class="text-2xl font-bold mb-4">Catat Penggunaan Kegiatan</h1>
+    <div id="message" class="mb-4"></div>
+
+  <form id="latihan-form" class="space-y-4 bg-white p-6 rounded-lg shadow-md">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Nama Pengguna</label>
+        <input id="latihan-nama" class="w-full border p-2 rounded" placeholder="Nama lengkap atau nickname" required>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Nama Kegiatan</label>
+        <input id="latihan-latihan" class="w-full border p-2 rounded" placeholder="Contoh: Kegiatan SRT" required>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Filter Kategori</label>
+        <select id="filter-kategori" class="w-full border p-2 rounded">
+          <option value="all">Semua (Metal & Non-Metal)</option>
+          <option value="Metal">Metal</option>
+          <option value="Non-Metal">Non-Metal</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Cari Alat</label>
+        <input id="search-alat" class="w-full border p-2 rounded" placeholder="Cari nama/merk/kode...">
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-2">Daftar Alat</h3>
+        <div id="alat-list" class="space-y-2 max-h-64 overflow-y-auto bg-white p-2 rounded border"></div>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-2">Keranjang Kegiatan</h3>
+        <div id="latihan-cart" class="space-y-2 bg-white p-2 rounded border min-h-[4rem]"></div>
+      </div>
+
+      <div class="flex items-center justify-between">
+        <button id="btn-back-login" type="button" class="px-3 py-2 bg-gray-200 text-gray-800 rounded">Kembali ke Login</button>
+        <button id="btn-submit-latihan" type="submit" class="px-4 py-2 bg-blue-600 text-white rounded">Simpan Catatan Penggunaan</button>
+      </div>
+    </form>
+
+  <p class="mt-6 text-sm text-gray-600">Catatan: Halaman ini hanya mencatat penggunaan Kegiatan. Perubahan stok/status akan diproses oleh sistem.</p>
+  </div>
+
+  <script type="module" src="js/public-kegiatan.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* Mengatur font dasar untuk seluruh halaman */
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+/* Latar belakang gelap saat modal muncul */
+.modal-backdrop { 
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+/* Animasi transisi untuk modal */
+.modal { 
+    transition: opacity 0.3s ease; 
+}
+
+/* Gaya untuk tab navigasi yang aktif */
+.tab-link-active { 
+    border-color: #3B82F6; /* Biru */
+    color: #3B82F6; 
+}
+
+/* Gaya untuk tab navigasi yang tidak aktif */
+.tab-link { 
+    border-color: transparent; 
+}
+
+/* Scrollbar kustom agar lebih rapi */
+.custom-scrollbar::-webkit-scrollbar { 
+    width: 6px; 
+}
+.custom-scrollbar::-webkit-scrollbar-track { 
+    background: #f1f1f1; 
+}
+.custom-scrollbar::-webkit-scrollbar-thumb { 
+    background: #888; 
+    border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { 
+    background: #555; 
+}
+
+/* Gaya untuk form login */
+.login-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Gaya untuk kartu statistik di dasbor */
+.stat-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
