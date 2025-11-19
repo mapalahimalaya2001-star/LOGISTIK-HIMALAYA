@@ -8,7 +8,7 @@
   
 </div>
 
-Aplikasi ini adalah sistem manajemen aset yang dirancang untuk melacak peralatan organisasi MAPALAST secara *real-time* menggunakan Firebase.
+Aplikasi ini adalah sistem manajemen aset yang dirancang untuk melacak peralatan organisasi MPA HIMALAYA secara *real-time* menggunakan Firebase.
 
 <br>
 
@@ -63,7 +63,7 @@ Aplikasi ini adalah sistem manajemen aset yang dirancang untuk melacak peralatan
 
 1.  **Kloning Repositori:**
     ```bash
-    git clone [https://github.com/Sticcboi/LOGISTIK-MAPALAST]
+    git clone [https://github.com/Sticcboi/LOGISTIK-MPA-HIMALAYA]
     ```
 
 2.  **Konfigurasi Database:**
